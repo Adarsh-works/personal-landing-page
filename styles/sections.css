@@ -1,0 +1,113 @@
+/* =========================================
+   Hero section
+   ========================================= */
+
+/* Full-height intro area, vertically centered */
+#hero {
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+}
+
+/* Stacks text above image on small screens */
+.hero-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 2.5rem;
+    width: 100%;
+}
+
+/* Text block — full width on mobile */
+.hero-content {
+    flex: 1;
+    width: 100%;
+    text-align: center;
+}
+
+.hero-tag {
+    color: #38bdf8;
+    font-size: 0.95rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    letter-spacing: 0.02em;
+}
+
+#hero h2 {
+    font-size: 1.75rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+
+.hero-description {
+    color: #cbd5e1;
+    font-size: 1rem;
+    max-width: 32rem;
+    margin: 0 auto 1.5rem;
+}
+
+.hero-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+/* Circular profile photo with accent ring */
+.hero-image {
+    width: 100%;
+    max-width: 220px;
+    flex-shrink: 0;
+    padding: 5px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #38bdf8, #818cf8);
+    box-shadow: 0 20px 40px rgba(56, 189, 248, 0.2);
+}
+
+.hero-image img {
+    width: 100%;
+    border-radius: 50%;
+    border: 4px solid #0f172a;
+    object-fit: cover;
+    aspect-ratio: 1;
+    transition: transform 0.3s ease;
+}
+
+.hero-image:hover img {
+    transform: scale(1.03);
+}
+
+/* Side-by-side layout on larger screens */
+@media (min-width: 768px) {
+    .hero-wrapper {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 3.75rem;
+    }
+
+    .hero-content {
+        text-align: left;
+    }
+
+    .hero-description {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .hero-buttons {
+        justify-content: flex-start;
+    }
+
+    #hero h2 {
+        font-size: 2.5rem;
+    }
+
+    .hero-image {
+        max-width: 280px;
+        padding: 6px;
+        box-shadow: 0 24px 48px rgba(56, 189, 248, 0.25);
+    }
+}
