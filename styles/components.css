@@ -1,0 +1,73 @@
+/* =========================================
+   Navbar
+   Styles the <nav> inside <header>
+   ========================================= */
+
+/* Keeps the navbar visible while scrolling */
+header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: #0f172a;
+    border-bottom: 1px solid #1e293b;
+}
+
+/* Logo on the left, links on the right */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 0;
+}
+
+/* Site name / brand */
+nav h1 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+/* Horizontal list of nav links */
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 0.5rem 1.5rem;
+}
+
+/* Individual nav links */
+nav a {
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #cbd5e1;
+    padding: 0.35rem 0.5rem;
+    border-radius: 6px;
+    transition: color 0.2s ease, background-color 0.2s ease;
+}
+
+nav a:hover {
+    color: #38bdf8;
+    background-color: rgba(56, 189, 248, 0.1);
+}
+
+/* Keyboard focus — visible outline for accessibility */
+nav a:focus-visible {
+    outline: 2px solid #38bdf8;
+    outline-offset: 2px;
+}
+
+/* Stack brand and links on small screens */
+@media (max-width: 640px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        width: 100%;
+        justify-content: flex-start;
+        gap: 0.5rem 1rem;
+    }
+}
