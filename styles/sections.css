@@ -1,15 +1,9 @@
-/* =========================================
-   Hero section
-   ========================================= */
-
-/* Full-height intro area, vertically centered */
 #hero {
     min-height: 90vh;
     display: flex;
     align-items: center;
 }
 
-/* Stacks text above image on small screens */
 .hero-wrapper {
     display: flex;
     flex-direction: column;
@@ -19,7 +13,6 @@
     width: 100%;
 }
 
-/* Text block — full width on mobile */
 .hero-content {
     flex: 1;
     width: 100%;
@@ -55,7 +48,6 @@
     gap: 1rem;
 }
 
-/* Circular profile photo with accent ring */
 .hero-image {
     width: 100%;
     max-width: 220px;
@@ -79,7 +71,6 @@
     transform: scale(1.03);
 }
 
-/* Side-by-side layout on larger screens */
 @media (min-width: 768px) {
     .hero-wrapper {
         flex-direction: row;
@@ -109,5 +100,87 @@
         max-width: 280px;
         padding: 6px;
         box-shadow: 0 24px 48px rgba(56, 189, 248, 0.25);
+    }
+}
+
+#about {
+    background-color: #111827;
+}
+
+.about-content {
+    max-width: 100rem;
+    margin: 0 auto;
+}
+
+.about-description {
+    color: #cbd5e1;
+    font-size: 1rem;
+    line-height: 1.7;
+    max-width: 60rem;
+    margin-bottom: 2rem;
+}
+
+.about-highlights {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+}
+
+.highlight-card {
+    background-color: #1e293b;
+    border: 1px solid #334155;
+    min-height: 15rem;
+    border-radius: 12px;
+    padding: 1.5rem;
+    transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.highlight-card:hover {
+    transform: translateY(-4px);
+    border-color: #38bdf8;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
+}
+
+.highlight-card h3 {
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: #38bdf8;
+    margin-bottom: 0.75rem;
+}
+
+.highlight-card p {
+    color: #cbd5e1;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+@media (min-width: 640px) {
+    .about-highlights {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Center the third card when only two fit per row */
+    .highlight-card:last-child {
+        grid-column: 1 / -1;
+        max-width: 28rem;
+        justify-self: center;
+    }
+}
+
+@media (min-width: 1024px) {
+    .about-highlights {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+    }
+
+    .highlight-card:last-child {
+        grid-column: auto;
+        max-width: none;
+        justify-self: stretch;
+    }
+
+    .about-description {
+        font-size: 1.05rem;
+        margin-bottom: 2.5rem;
     }
 }
