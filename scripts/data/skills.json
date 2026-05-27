@@ -1,0 +1,22 @@
+[
+    {
+      "name": "HTML",
+      "icon": "🌐",
+      "level": "Advanced"
+    },
+    {
+      "name": "CSS",
+      "icon": "🎨",
+      "level": "Advanced"
+    },
+    {
+      "name": "JavaScript",
+      "icon": "🟨 JS",
+      "level": "Intermediate"
+    },
+    {
+        "name": "React",
+        "icon": "⚛️",
+        "level": "Intermediate"
+      }
+  ] 

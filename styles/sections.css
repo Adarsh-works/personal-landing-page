@@ -1,7 +1,9 @@
 #hero {
-    min-height: 90vh;
+    min-height: 80vh;
     display: flex;
     align-items: center;
+    padding-top: 1rem;
+    padding-bottom: 1.5rem;
 }
 
 .hero-wrapper {
@@ -105,6 +107,7 @@
 
 #about {
     background-color: #111827;
+    padding-top: 1.5rem;
 }
 
 .about-content {
@@ -159,7 +162,6 @@
         grid-template-columns: repeat(2, 1fr);
     }
 
-    /* Center the third card when only two fit per row */
     .highlight-card:last-child {
         grid-column: 1 / -1;
         max-width: 28rem;
@@ -182,5 +184,90 @@
     .about-description {
         font-size: 1.05rem;
         margin-bottom: 2.5rem;
+    }
+}
+
+/* Skills */
+#skills {
+    background-color: #0b1220;
+}
+
+.skills-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin-top: 1.25rem;
+}
+
+.skill-card {
+    background-color: #1e293b;
+    border: 1px solid #334155;
+    border-radius: 14px;
+    padding: 1.25rem;
+    min-height: 120px;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto auto;
+    column-gap: 0.9rem;
+    row-gap: 0.25rem;
+    align-items: center;
+    transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.skill-card:hover {
+    transform: translateY(-3px);
+    border-color: #38bdf8;
+    box-shadow: 0 12px 26px rgba(0, 0, 0, 0.28);
+}
+
+.skill-icon {
+    grid-row: 1 / -1;
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+    display: grid;
+    place-items: center;
+    background: rgba(56, 189, 248, 0.12);
+    border: 1px solid rgba(56, 189, 248, 0.22);
+    color: #e2e8f0;
+    font-size: 1.25rem;
+    line-height: 1;
+}
+
+.skill-card h3 {
+    font-size: 1.05rem;
+    font-weight: 700;
+    letter-spacing: 0.01em;
+    color: #f8fafc;
+    line-height: 1.25;
+}
+
+.skill-card p {
+    color: #cbd5e1;
+    font-size: 0.95rem;
+    line-height: 1.4;
+}
+
+@media (min-width: 520px) {
+    .skills-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 1.1rem;
+    }
+}
+
+@media (min-width: 900px) {
+    .skills-container {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 1.25rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    .skills-container {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+
+    .skill-card {
+        padding: 1.35rem;
     }
 }
