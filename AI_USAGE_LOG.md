@@ -46,7 +46,7 @@ To improve the responsiveness and visual structure of the Hero section while sti
 
 ## Task
 
-About Section 
+About Section Styling
 
 ### Prompt Used
 
@@ -68,7 +68,7 @@ To improve the responsiveness and visual structure of the About section while st
 
 ## Task
 
-Skills Section 
+Skills Section Styling
 
 ### Prompt Used
 
@@ -89,7 +89,7 @@ To improve the responsiveness and visual structure of the Skill section while st
 ____________________________________________________________________________
 ## Task
 
-Projects Section 
+Projects Section Styling
 
 ### Prompt Used
 
@@ -103,6 +103,28 @@ a responsive projects-container grid (1 column on mobile, 2 on tablet+) and card
 ### What I Changed
 
 I reviewed the generated css and simplified some spacing and layout properties.
+
+### Why
+
+To improve the responsiveness and visual structure of the Project section while still understanding the implementation
+
+_________________________________________________________________________________
+## Task
+
+Contact Section Styling
+
+### Prompt Used
+
+Create clean, maintainable, and responsive CSS for my Contactsection following project conventions
+
+### AI Output
+
+Added Contact section styles in styles/sections.css: 
+a mobile-first .contact-content grid (stacked → 2-column on larger screens) with consistent dark “card” styling for .contact-info/.contact-form. Styled .contact-links and form inputs/textarea/button with matching hover + accessible focus states for a clean, maintainable UI.
+
+### What I Changed
+
+I reviewed the generated css and simplified some spacing, added some custom styles and layout properties.
 
 ### Why
 
