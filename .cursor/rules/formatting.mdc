@@ -1,0 +1,33 @@
+---
+alwaysApply: true
+---
+
+# Formatting & Code Style Rules
+
+## HTML Rules
+- Use semantic HTML tags
+- Maintain proper heading hierarchy (H1-H3)
+- Use meaningful class names
+- Avoid unnecessary div nesting
+
+## CSS Rules
+- Use reusable CSS classes
+- Prefer Flexbox and Grid for layouts
+- Avoid inline styles
+- Use consistent spacing and naming conventions
+
+## JavaScript Rules
+- Keep code beginner friendly
+- Use meaningful variable and function names
+- Avoid unnecessary complexity
+- Keep functions small and readable
+
+## Naming Conventions
+- Use kebab-case for CSS class names
+- Use camelCase for JavaScript variables/functions
+- Keep naming descriptive and readable
+
+## General Formatting
+- Keep code clean and maintainable
+- Avoid duplicate code
+- Follow existing project structure

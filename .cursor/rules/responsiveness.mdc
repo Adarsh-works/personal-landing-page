@@ -1,0 +1,20 @@
+---
+alwaysApply: true
+description: "Responsive designn and layout rules"
+---
+## Responsiveness Rules:
+- Design mobile-first layouts
+- Ensure UI works across mobile, tablet and desktop
+- Use responsive flexbox and grid layout
+- Avoid fixed width whenever possible
+- Maintain proper alignment across screeen size
+
+## Mobile UI Rules:
+- Ensure Buttons are touch friendly
+- Prevent horizontal scrolling
+- Keep text readable on smaller screen
+
+## Layout Rules 
+- Use Flexbox for one-dimensional layout
+- Use CSS Grid for complex layouts
+- Prefer percentage(%) and Relative units(rem) over fixed pixels

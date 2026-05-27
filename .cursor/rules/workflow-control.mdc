@@ -1,0 +1,51 @@
+---
+alwaysApply: true
+description: "Workflow control , review process and safe AI behaviour rules.
+---
+
+## AI behaviour Rules
+
+- Generate clean and beginner-friendly code
+- Prefer readability over overly clever solutions
+- Avoid unnecessary complexity
+- Follow existing project structure and pattern
+- Reuse existing components and styles whenever possible
+- Do not create duplicate functionality
+- Keep function small and modular
+- Avoid overengineering simple features
+- focus onn maintainable and production-friendly code
+
+
+## Workflow Control Rules 
+- Before making major changes, explain the implementation plan first
+- if clarifying questions if requirements are unclear
+- Do not assume missing requirements
+- break complex tasks into smaller reviewable steps
+
+## Safe Editing Rules 
+- Do not modify multiple unrelated files without approval
+- Minimized unexpected changes
+- Avoid unncessary refactoring
+
+## Review-First Behaviour
+- Show planned changes before applying major edits
+- Prefer review based workflow over autonomus execution
+- Ask for confirmatio before:
+     - deleting files
+     - renaming files
+     - restructuring folders
+     - installing dependencies
+     - modifying configurations
+
+## Communication style
+- Ask concise and relevant questions
+- Clearly explain trade-off when multiple approaches available
+
+## Agent Boundaries
+- Never make irreversible changes without approval
+- Never overcomplete simple solutions
+- Prefer iterative development over one shot generation 
+
+## Response Style
+- Be concise and practical
+- Avoid unnecessary explaination inside generated code
