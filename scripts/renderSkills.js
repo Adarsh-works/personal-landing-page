@@ -1,4 +1,4 @@
-export const skillsContainer = document.getElementById("skills-container");
+const skillsContainer = document.getElementById("skills-container");
 
 async function fetchSkills() {
     try {

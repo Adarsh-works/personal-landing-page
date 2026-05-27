@@ -1,0 +1,16 @@
+[
+    {
+      "title": "Hangman Game",
+      "description": "A responsive hangman game built using HTML, CSS, and JavaScript.",
+      "technologies": ["HTML", "CSS", "JavaScript"],
+      "github": "https://github.com/yourusername/hangman-game",
+      "liveDemo": "https://your-demo-link.com"
+    },
+    {
+      "title": "Pizza Sales Dashboard",
+      "description": "Data analysis dashboard project using SQL and Power BI.",
+      "technologies": ["SQL", "Power BI"],
+      "github": "https://github.com/yourusername/pizza-dashboard",
+      "liveDemo": "https://your-demo-link.com"
+    }
+  ]

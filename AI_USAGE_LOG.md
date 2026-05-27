@@ -76,7 +76,7 @@ Create clean, maintainable, and responsive CSS for my Skills section following p
 
 ### AI Output
 
-Added a complete, mobile-first Skills section style block in styles/sections.css:
+Added a complete, mobile-first Skills section style block in styles/sections.css
 
 ### What I Changed
 
@@ -84,4 +84,26 @@ I reviewed the generated css and simplified some spacing and layout properties.
 
 ### Why
 
-To improve the responsiveness and visual structure of the About section while still understanding the implementation
+To improve the responsiveness and visual structure of the Skill section while still understanding the implementation
+
+____________________________________________________________________________
+## Task
+
+Projects Section 
+
+### Prompt Used
+
+Create clean, maintainable, and responsive CSS for my Projects section following project conventions
+
+### AI Output
+
+Added mobile-first Projects styles in styles/sections.css.
+a responsive projects-container grid (1 column on mobile, 2 on tablet+) and card styling for .project-card .project-title, .project-description, .tech-badge, and .project-links. 
+
+### What I Changed
+
+I reviewed the generated css and simplified some spacing and layout properties.
+
+### Why
+
+To improve the responsiveness and visual structure of the Project section while still understanding the implementation
