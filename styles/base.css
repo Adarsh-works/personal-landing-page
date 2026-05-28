@@ -5,7 +5,7 @@
 }
  
 :root{
-    /* Color system */
+    
     --bg-0: #0b1220;
     --bg-1: #0f172a;
     --bg-2: #111827;
@@ -17,16 +17,14 @@
     --primary: #38bdf8;
     --primary-2: #818cf8;
 
-    /* Layout + sizing */
     --container-max: 1200px;
     --radius-sm: 10px;
     --radius-md: 14px;
 
-    /* Spacing (responsive) */
     --section-pad-y: clamp(3.25rem, 7vw, 5.25rem);
     --section-pad-y-hero: clamp(3.25rem, 6vw, 5rem);
 
-    /* Effects */
+
     --shadow-sm: 0 10px 24px rgba(0, 0, 0, 0.22);
     --shadow-md: 0 16px 40px rgba(0, 0, 0, 0.26);
     --ring: 0 0 0 4px rgba(56, 189, 248, 0.16);
@@ -54,7 +52,6 @@ body{
     overflow-x: clip;
 }
 
-/* Ambient animated backdrop */
 body::before,
 body::after{
     content: "";

@@ -50,6 +50,10 @@
     gap: 1rem;
 }
 
+.hero-buttons .btn {
+    text-align: center;
+}
+
 .hero-image {
     width: 100%;
     max-width: 220px;
@@ -103,6 +107,17 @@
         max-width: 280px;
         padding: 6px;
         box-shadow: 0 24px 48px rgba(56, 189, 248, 0.25);
+    }
+}
+
+@media (max-width: 520px) {
+    .hero-buttons {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .hero-buttons .btn {
+        width: 100%;
     }
 }
 
